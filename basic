@@ -1,0 +1,23 @@
+ pipeline{
+    agent any
+    stages { 
+        stage ("jenkins pac"){
+            steps{
+                scripts{
+                    sh """
+                    echo "hey welcome to pac"
+                    """"
+                }
+            }
+        }
+        stage ("code build"){
+            steps{
+                scripts{
+                    sh """
+                    echo "hey we are building the code"
+                    """"
+                }
+            }
+        }
+    }
+ }
