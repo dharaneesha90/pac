@@ -18,6 +18,14 @@ pipeline {
           """
         }
       }
+    }
+    stage("Code build"){
+      steps {
+        script {
+          var1 = 40
+          println "my var1 value is ${var1}"
+        }
+      }
     }    
   }
 }
