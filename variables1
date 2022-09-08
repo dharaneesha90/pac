@@ -1,0 +1,15 @@
+pipeline {
+    agent any
+    stages {
+        stage ("variables") {
+            steps {
+                script {
+                    /*defining variables */
+                    var1 = 24
+                    println "my var1 value is ${var1}"
+                }
+            }
+
+        }
+    }
+}
