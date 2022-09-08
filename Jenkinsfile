@@ -1,15 +1,15 @@
 pipeline {
-    agent any
-    stages {
-      stage ("jenkins pac") {
-        steps {
-          script {
-            sh """
-            echo "hey welcome to pac"
-            """
-                }
-            }
+  agent any
+  stages {
+    stage("jenkins pac"){
+      steps {
+        script {
+          sh """
+          echo "Hi all welcome to Jenkins Pac"
+          """
         }
+      }
+    }
     stage("Code build"){
       steps {
         script {
@@ -18,16 +18,6 @@ pipeline {
           """
         }
       }
-    }
-    stage("variable delcare"){
-      steps {
-        script {
-          sh """
-          var1 = 50
-          println "${var1}"
-       }   """    
-       }
-      }
-      }
+    }    
+  }
 }
-}    
